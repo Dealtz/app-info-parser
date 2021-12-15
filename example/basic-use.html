@@ -46,6 +46,22 @@
                 <span style="width: 0; flex: 1; overflow-wrap: break-word; word-wrap: break-word;">${ files[0].name }</span>
               </p>
               <p style="padding: 10px 0; display: flex; overflow: hidden;">
+                <span style="color: #000; text-align: right; width: 100px; font-weight: 600; padding-right: 20px;">Apple Id: </span>
+                <span style="width: 0; flex: 1; overflow-wrap: break-word; word-wrap: break-word;">${result.iTunesMetadataPlistInfo.appleId}</span>
+              </p>
+              <p style="padding: 10px 0; display: flex; overflow: hidden;">
+                <span style="color: #000; text-align: right; width: 100px; font-weight: 600; padding-right: 20px;">Item Id: </span>
+                <span style="width: 0; flex: 1; overflow-wrap: break-word; word-wrap: break-word;">${result.iTunesMetadataPlistInfo.itemId}</span>
+              </p>
+              <p style="padding: 10px 0; display: flex; overflow: hidden;">
+                <span style="color: #000; text-align: right; width: 100px; font-weight: 600; padding-right: 20px;">Purchase Date: </span>
+                <span style="width: 0; flex: 1; overflow-wrap: break-word; word-wrap: break-word;">${result.iTunesMetadataPlistInfo.purchaseDate.toLocaleString('zh-hans', {hour12: false})}</span>
+              </p>
+              <p style="padding: 10px 0; display: flex; overflow: hidden;">
+                <span style="color: #000; text-align: right; width: 100px; font-weight: 600; padding-right: 20px;">Version Id: </span>
+                <span style="width: 0; flex: 1; overflow-wrap: break-word; word-wrap: break-word;">${result.iTunesMetadataPlistInfo.softwareVersionExternalIdentifier}</span>
+              </p>
+              <p style="padding: 10px 0; display: flex; overflow: hidden;">
                 <span style="color: #000; text-align: right; width: 100px; font-weight: 600; padding-right: 20px;">App Icon: </span>
                 <img style="width: 80px; height: 80px;" src="${result.icon}" alt="">
               </p>
@@ -56,6 +72,10 @@
               <p style="padding: 10px 0; display: flex; overflow: hidden;">
                 <span style="color: #000; text-align: right; width: 100px; font-weight: 600; padding-right: 20px;">App Version: </span>
                 <span style="width: 0; flex: 1; overflow-wrap: break-word; word-wrap: break-word;">${ result['versionName'] || result['CFBundleShortVersionString'] }</span>
+              </p>
+              <p style="padding: 10px 0; display: flex; overflow: hidden;">
+                <span style="color: #000; text-align: right; width: 100px; font-weight: 600; padding-right: 20px;">Identifier: </span>
+                <span style="width: 0; flex: 1; overflow-wrap: break-word; word-wrap: break-word;">${ result['CFBundleIdentifier'] }</span>
               </p>
             </div>
           `

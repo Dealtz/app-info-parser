@@ -1,4 +1,5 @@
-## app-info-parser
+## app-info-parser modified by Dealtz
+This repository is a modified version of app-info-parser, with the addition of returning information about the plist file `iTunesMetadata.plist` in the `.ipa` downloaded by iTunes.
 
 [app-info-parser](https://github.com/chenquincy/app-info-parser) is a parser for parsing `.ipa` or `.apk` files. It will return the information with json from `AndroidManifest.xml` or `Info.plist`.
 
