@@ -55,7 +55,7 @@
               </p>
               <p style="padding: 10px 0; display: flex; overflow: hidden;">
                 <span style="color: #000; text-align: right; width: 100px; font-weight: 600; padding-right: 20px;">Purchase Date: </span>
-                <span style="width: 0; flex: 1; overflow-wrap: break-word; word-wrap: break-word;">${result.iTunesMetadataPlistInfo.purchaseDate.toLocaleString('zh-hans', {hour12: false})}</span>
+                <span style="width: 0; flex: 1; overflow-wrap: break-word; word-wrap: break-word;">${result.iTunesMetadataPlistInfo.purchaseDate ? result.iTunesMetadataPlistInfo.purchaseDate.toLocaleString('zh-hans', {hour12: false}) : result.iTunesMetadataPlistInfo.purchaseDate}</span>
               </p>
               <p style="padding: 10px 0; display: flex; overflow: hidden;">
                 <span style="color: #000; text-align: right; width: 100px; font-weight: 600; padding-right: 20px;">Version Id: </span>
